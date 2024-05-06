@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>java Script</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    header {
+      /* background-color: aqua; */
+      /* color: ; */
+      height: 100vh;
+      /* width: 100%; */
+
+      /* background-image: url("https://i.pinimg.com/736x/97/93/d3/9793d38df0cbe4cdf957d861fe78fe9a.jpg"); */
+
+      background-image: url("https://i.pinimg.com/736x/f5/c8/2a/f5c82a798d102737bf9a3078dddb83e9.jpg ");
+      /* height: 100%; */
+      background-size: cover;
+      /* backface-visibility: unset; */
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    form {
+      transition: all .5s;
+      position: absolute;
+      left: 20%;
+      top: 20%;
+      right: 20%;
+      justify-content: center;
+      width: fit-content;
+      margin: 0 auto;
+      background-image: url("https://i.pinimg.com/736x/10/28/89/1028894f3c5f14d03ad99fc66bc6d1d0.jpg");
+      /* background-color: black; */
+      /* background-image: url("https://i.pinimg.com/736x/97/93/d3/9793d38df0cbe4cdf957d861fe78fe9a.jpg"); */
+      background-size: cover;
+      backface-visibility: unset;
+
+      /* background-position: center; */
+      border: 6px dotted white;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    form label {
+      font-size: 20px;
+      font-weight: bold;
+      background-color: white;
+      color: width(11, 2, 51, 0.527)
+    }
+
+    span {
+      color: white;
+    }
+  </style>
+  <!-- <script src="/js/surajj.js"></script> -->
+</head>
+
+<body>
+  <script>
+    function uSSerValidation() {
+      document.getElementById('user-confriom').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome '
+
+    }
+    function ValidateFrom() {
+      var username = document.MyForm.user.value;
+      if (username == null || username == "" || username.length < 4) {
+        alert("Please Eneter your Valid Username");
+        return false;
+      }
+      // else{
+      // document.getElementById('user-confriom').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome '
+      //   return true;
+      // }
+
+
+
+      var password = document.MyForm.Password.value;
+      var confirmpassword = document.MyForm.Password2.value;
+      if (password == confirmpassword) {
+        document.getElementById('errorPassword').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Both Passowrd Match'
+        return true;
+      } else {
+        document.getElementById('errorPassword').innerHTML = '<img src = "https://media.tenor.com/wpbnk3ZnOeAAAAAi/yes-no-yes.gif" style = "width:20px;">  Password Doesn"t Match'
+        return false;
+      }
+      // var std = document.MyForm.telephone.value;
+      // if (std.length >= 10) {
+      //   document.getElementById('dwd').innerHTML = "Enter a valid number"
+      //   return false;
+      // }else{
+      // document.getElementById('dwd').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome '
+      //   return true;
+      // }
+
+    }
+
+    function CheckTelephone() {
+
+
+      var std = document.MyForm.telephone.value;
+      if (isNaN(std) || std.length < 10 || std.length > 10) {
+        document.getElementById('dwd').innerHTML = "Enter a valid number"
+        return false;
+      } else if (std.length <= 10 && std.length >= 10) {
+        return true;
+      } else {
+        document.getElementById('dwd').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome '
+        return true;
+      }
+
+      if (std.length <= 10) {
+        document.getElementById('dwd').innerHTML = "Enter a limited number"
+
+        // alert("please enete limited number")
+        return false;
+
+      }
+      else {
+        return true;
+      }
+
+      // document.getElementsByClassName('dwd').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome '
+
+    }
+    function pasWordddcOrre() {
+      https://www.instagram.com/suraj_rajput?igsh=Z3l1ZXk5ZWZva2Vo
+      document.getElementById('errorPassword').innerHTML = '<img src="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style="width: 20px;">Confirom Borth password'
+
+    }
+
+    function PassowrdCheck() {
+      var password = document.MyForm.Password.value;
+      if (password.length < 6) {
+        alert("password at least 6 character long.")
+        return false;
+      } else {
+        document.getElementById('password_correct').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome '
+        return true;
+      }
+
+      if (condition) {
+        document.getElementById('password_correct').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome '
+        return true;
+      }
+      else {
+
+
+        document.getElementById('errorPassword').innerHTML = '<img src="https://media.tenor.com/XqWg4MlbqqUAAAAi/%C3%A1men-cross.gif" style="width: 20px;">Please eneter your username'
+
+        return false;
+
+      }
+    }
+    function OnChange() {
+      var Suraj2 = document.MyForm.email.value;
+      var Addre = Suraj2.indexOf('@');
+      var Dotted = Suraj2.indexOf('.');
+      //  document.getElementById('email-confiroms').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome '
+
+      if (Addre < 1 || Dotted < Addre + 2 || Dotted + 2 >= Suraj2.length) {
+        alert("Enter a Valid E-mail");
+        return false;
+      } else {
+        alert("Dose Not Match")
+        return true;
+
+      }
+
+      //   if (condition) {
+      //  document.getElementById('email-confiroms').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome '
+      //     return true
+
+      //   } else {
+      //     document.getElementById('email-confiroms').innerHTML='<img src="https://media.tenor.com/XqWg4MlbqqUAAAAi/%C3%A1men-cross.gif" style="width: 20px;">Please eneter your username'
+
+      //     return false
+      //   }
+    }
+
+
+    function dwdbacth() {
+      document.getElementById('name').innerHTML = '<img src="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style="width: 20px;"> Confirome';
+    }
+    function dwdbacth2() {
+      document.getElementById('name2').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style= "width:20px">Confirome'
+    }
+    // document.getElementById('dwd').innerText= '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome ';
+    function EmailCorraction() {
+      document.getElementById('email-confirom').innerHTML = '<img src="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome ';
+    }
+
+
+
+  </script>
+  <header>
+    <h1>Registration Form</h1>
+    <form name="MyForm" onsubmit="return ValidateFrom()" type="text">
+      <label>User_Name</label> &nbsp;<input type="text" name="user" placeholder="User_Name"
+        oninput="uSSerValidation()" />
+      <span id="user-confriom"></span>
+      <br /><br />
+
+      <label>E-Mail</label> &nbsp;<input type="text" name="email" placeholder="E-Mail" onchange="OnChange()"
+        oninput="EmailCorraction()" />
+      <span id="email-confirom"></span>
+
+      <!-- document.getElementById('password_correct').innerHTML = '<img src ="https://media1.tenor.com/m/IY_nPuVFAiMAAAAC/one-loop-gif.gif" style = "width:20px;">Confirome ' -->
+
+      <br /><br />
+
+      <label>Passowrd</label> &nbsp;<input type="password" name="Password" placeholder="Passowrd"
+        onchange="PassowrdCheck()">
+      <span id="password_correct"></span>
+      <br /><br />
+
+      <label>Confirom-Passowrd</label> &nbsp;<input type="password" name="Password2"
+        placeholder="Confirom-Passowrd"><span id="errorPassword"></span>
+      <br /><br />
+
+      <label>Phone_Number</label> &nbsp;<input type="tel" name="telephone" placeholder="Phone_Number"
+        onchange="CheckTelephone()" />
+      <span id="dwd"></span>
+      <span class="dwd"></span>
+      <br /><br />
+
+
+
+
+      <label>Name</label> &nbsp;
+      <input type="text" name="Name" placeholder="Name" oninput="dwdbacth()" />
+      <span id="name"></span>
+      <br /><br />
+
+      <label>Full-Name</label> &nbsp;
+      <input type="text" name="Name2" placeholder="Full-Name" oninput="dwdbacth2()" />
+      <span id="name2"></span>
+      <br /><br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <input type="submit" value="Submit" />
+    </form>
+  </header>
+</body>
+<!-- oninput -->
+<!-- onchange -->
+<!-- onblur -->
+
+</html>
